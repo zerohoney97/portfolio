@@ -44,12 +44,12 @@ const Profile = () => {
                     src={profileImg}
                     aria-hidden
                     alt="profile image"
-                    className="w-[100vw] h-[280px] m-auto rounded-full border-2 border-slate-500"
+                    className="md:w-[100vw] md:h-[280px]  m-auto rounded-full border-2 border-slate-500"
                 />
             </div>
             <div className="w-[100%] box-border md:w-[70%] md:p-[10px] ">
                 <Hero>
-                    이무헌 <span className="text-[16px] text-slate-400 font-normal">web7722</span>
+                    이무헌 <span className="text-[16px] text-slate-400 font-normal">zerohoney</span>
                 </Hero>
                 <p className="text-slate-700 pt-[5px] md:text-[24px] md:pt-[10px] text-[16px]">
                     항상 배우고 노력하는 개발자

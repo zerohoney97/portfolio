@@ -1,5 +1,12 @@
+import { useEffect } from 'react'
 import ReactDOM from 'react-dom'
 const Modal = ({ show, onCloseButtonClick, children }) => {
+    useEffect(
+        (show) => {
+            console.log(show)
+        },
+        [show],
+    )
     if (!show) {
         return null
     }
@@ -9,7 +16,7 @@ const Modal = ({ show, onCloseButtonClick, children }) => {
             onClick={onCloseButtonClick}
             className="fixed top-0 left-0 flex items-center justify-center w-full h-full bg-gray-500 bg-opacity-50"
         >
-            <div className="p-8 bg-white rounded-md w-[50%]">
+            <div className="p-8 bg-white rounded-md w-[50%] h-[400px]">
                 <h2 className="mb-4 text-lg font-bold">
                     <button className="float-right" onClick={onCloseButtonClick}>
                         X
