@@ -3,7 +3,7 @@ import { IoLogoGithub } from 'react-icons/io'
 import { TfiEmail } from 'react-icons/tfi'
 import { FaBlogger } from 'react-icons/fa6'
 import { useState, useRef, useEffect } from 'react'
-import profileImg from '../profileImg.jpg'
+import profileImg from '../img/profileImg.jpg'
 const Profile = () => {
     const [isVisible, setIsVisible] = useState(false)
     const animatedElementRef = useRef(null)
