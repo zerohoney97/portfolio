@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react'
-import Slider from 'react-slick'
 
 import ReactImageGallery from 'react-image-gallery'
 const ImageAndVideoSlider = ({ images, videos }) => {
