@@ -16,7 +16,7 @@ const ImageAndVideoSlider = ({ images, videos }) => {
 
     return (
         <div className="w-[500px] absolute left-[50%] -translate-x-[50%]">
-            <ReactImageGallery items={images} />;
+            <ReactImageGallery items={images} />
         </div>
     )
 }
