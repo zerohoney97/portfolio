@@ -18,16 +18,19 @@ const ImageAndVideoSlider = ({ images, videos }) => {
     }, [images])
 
     return (
-        <Slider {...settings}>
-            {images.map((imageUrl, index) => {
-                console.log(imageUrl)
-                return (
-                    <div key={index} style={{ display: 'flex', width: '100%', justifyContent: 'center' }}>
-                        <img width={'400px'} height={'300px'} src={imageUrl} alt={`이미지 ${index + 1}`} />
-                    </div>
-                )
-            })}
-        </Slider>
+        <div className="w-[500px] absolute left-[50%] -translate-x-[50%]">
+            {' '}
+            <Slider {...settings}>
+                {images.map((imageUrl, index) => {
+                    console.log(imageUrl)
+                    return (
+                        <div key={index}>
+                            <img width={'300px'}  src={imageUrl} alt={`이미지 ${index + 1}`} />
+                        </div>
+                    )
+                })}
+            </Slider>
+        </div>
     )
 }
 

@@ -22,7 +22,7 @@ const Modal = ({ show, onCloseButtonClick, children }) => {
                         X
                     </button>
                 </h2>
-                <div className="body">{children}</div>
+                <div className="body relative">{children}</div>
                 {/* <div className="footer">
                     <button onClick={onCloseButtonClick}>Close Modal</button>
                 </div> */}
