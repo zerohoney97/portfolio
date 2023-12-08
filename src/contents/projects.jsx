@@ -29,11 +29,17 @@ import payToss from '../img/payToss.png'
 import talk from '../img/talk.png'
 import myPage from '../img/mypage.png'
 import mypage2 from '../img/mypage2.png'
+import YoutubeVideo from '../video/youtube'
 const Projects = () => {
     const [isShowingModal, toggleModal] = useModal()
     const [isShowingModal2, toggleModal2] = useModal()
+    const [isShowingModal3, toggleModal3] = useModal()
+    const [isShowingModal4, toggleModal4] = useModal()
+    const [isShowingModal5, toggleModal5] = useModal()
     const imgs = [pay, payToss, myPage, mypage2, talk]
-  
+    const blockExploreVideoUrl = ['ZDqSlRfzeok', 'AfrcQATGKLg']
+    const travelOpenerUrl = 'wXHa4yTtfaM'
+    const baesimzaUrl = 'FEfzHpFr1r8'
     return (
         <Wrapper>
             <Heading>프로젝트</Heading>
@@ -214,7 +220,7 @@ const Projects = () => {
                             <li>
                                 <button
                                     className="px-[16px] py-[8px] bg-gray-800 rounded-[8px] text-white hover:bg-gray-950"
-                                    onClick={toggleModal2}
+                                    onClick={toggleModal3}
                                 >
                                     상세보기
                                 </button>
@@ -269,7 +275,7 @@ const Projects = () => {
                             <li>
                                 <button
                                     className="px-[16px] py-[8px] bg-gray-800 rounded-[8px] text-white hover:bg-gray-950"
-                                    onClick={toggleModal2}
+                                    onClick={toggleModal4}
                                 >
                                     상세보기
                                 </button>
@@ -334,7 +340,7 @@ const Projects = () => {
                             <li>
                                 <button
                                     className="px-[16px] py-[8px] bg-gray-800 rounded-[8px] text-white hover:bg-gray-950"
-                                    onClick={toggleModal2}
+                                    onClick={toggleModal5}
                                 >
                                     상세보기
                                 </button>
@@ -373,10 +379,25 @@ const Projects = () => {
                     </div>
                 </li>
             </ul>
-            <Modal show={isShowingModal} onCloseButtonClick={toggleModal}></Modal>
-
+            <Modal show={isShowingModal} onCloseButtonClick={toggleModal}>
+                <YoutubeVideo videoId={blockExploreVideoUrl[0]} />
+                {/* <YoutubeVideo videoId={blockExploreVideoUrl[1]} /> */}
+            </Modal>
             <Modal show={isShowingModal2} onCloseButtonClick={toggleModal2}>
-                <ImageAndVideoSlider images={imgs} />
+                <YoutubeVideo videoId={travelOpenerUrl} />
+                {/* <YoutubeVideo videoId={blockExploreVideoUrl[1]} /> */}
+            </Modal>
+            <Modal show={isShowingModal3} onCloseButtonClick={toggleModal3}>
+                <YoutubeVideo videoId={baesimzaUrl} />
+                {/* <YoutubeVideo videoId={blockExploreVideoUrl[1]} /> */}
+            </Modal>
+            <Modal show={isShowingModal4} onCloseButtonClick={toggleModal4}>
+                {/* <YoutubeVideo videoId={blockExploreVideoUrl[0]} /> */}
+                {/* <YoutubeVideo videoId={blockExploreVideoUrl[1]} /> */}
+            </Modal>
+
+            <Modal show={isShowingModal5} onCloseButtonClick={toggleModal5}>
+                {/* <ImageAndVideoSlider images={imgs} /> */}
             </Modal>
         </Wrapper>
     )
