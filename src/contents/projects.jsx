@@ -381,29 +381,7 @@ const Projects = () => {
                 </li>
             </ul>
             <Modal show={isShowingModal} onCloseButtonClick={toggleModal}></Modal>
-            <div className=''>
-                <h2> Single Item</h2>
-                <Slider {...settings} >
-                    <div>
-                        <h3>1</h3>
-                    </div>
-                    <div>
-                        <h3>2</h3>
-                    </div>
-                    <div>
-                        <h3>3</h3>
-                    </div>
-                    <div>
-                        <h3>4</h3>
-                    </div>
-                    <div>
-                        <h3>5</h3>
-                    </div>
-                    <div>
-                        <h3>6</h3>
-                    </div>
-                </Slider>
-            </div>
+
             <Modal show={isShowingModal2} onCloseButtonClick={toggleModal2}>
                 <ImageAndVideoSlider images={imgs} />
             </Modal>
