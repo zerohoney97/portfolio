@@ -29,18 +29,11 @@ import payToss from '../img/payToss.png'
 import talk from '../img/talk.png'
 import myPage from '../img/mypage.png'
 import mypage2 from '../img/mypage2.png'
-import Slider from 'react-slick'
 const Projects = () => {
     const [isShowingModal, toggleModal] = useModal()
     const [isShowingModal2, toggleModal2] = useModal()
     const imgs = [pay, payToss, myPage, mypage2, talk]
-    const settings = {
-        dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-    }
+  
     return (
         <Wrapper>
             <Heading>프로젝트</Heading>
