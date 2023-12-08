@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.0e982dea.css",
+    "main.js": "/portfolio/static/js/main.13773985.js",
+    "static/js/787.7da95b79.chunk.js": "/portfolio/static/js/787.7da95b79.chunk.js",
+    "static/media/mypage2.png": "/portfolio/static/media/mypage2.bb6e77b65171df4140df.png",
+    "static/media/payToss.png": "/portfolio/static/media/payToss.5ff0f1b100d86c60571f.png",
+    "static/media/profileImg.jpg": "/portfolio/static/media/profileImg.42be89c969f997765cf5.jpg",
+    "static/media/pay.png": "/portfolio/static/media/pay.75d176f8805e1e153df3.png",
+    "static/media/mypage.png": "/portfolio/static/media/mypage.14266f39669ccec22881.png",
+    "static/media/talk.png": "/portfolio/static/media/talk.a000f8e8bbac80b6778b.png",
+    "static/media/interNode.png": "/portfolio/static/media/interNode.44ef306f227792540fcf.png",
+    "static/media/travelOpener.png": "/portfolio/static/media/travelOpener.97c544dccff191ec7e0f.png",
+    "static/media/baesimza.png": "/portfolio/static/media/baesimza.4a37c3272a993cb5552e.png",
+    "static/media/blockExploreLogo.png": "/portfolio/static/media/blockExploreLogo.5138e60edc0d60362e29.png",
+    "index.html": "/portfolio/index.html",
+    "main.0e982dea.css.map": "/portfolio/static/css/main.0e982dea.css.map",
+    "main.13773985.js.map": "/portfolio/static/js/main.13773985.js.map",
+    "787.7da95b79.chunk.js.map": "/portfolio/static/js/787.7da95b79.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0e982dea.css",
+    "static/js/main.13773985.js"
+  ]
+}
