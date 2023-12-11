@@ -288,6 +288,9 @@ const Projects = () => {
                             <a href="https://github.com/zerohoney97/interNode">
                                 <FaExternalLinkAlt />
                             </a>
+                            <a href="http://15.164.187.63/main">
+                                <GrDomain />
+                            </a>
                         </h2>
 
                         <p className="leading-5 text-slate-950 text-[12px] md:text-[16px] md:leading-7">

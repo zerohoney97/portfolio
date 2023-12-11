@@ -1,49 +1,26 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import Slider from 'react-slick'
 import './slide.css'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 const ImageAndVideoSlider = ({ images, videos }) => {
-    const settings = {
-        dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        appendDots: (dots) => (
-            <div
-                style={{
-                    backgroundColor: '#ddd',
-                    borderRadius: '10px',
-                    padding: '10px',
-                }}
-            >
-                <ul style={{ margin: '0px' }}> {dots} </ul>
-            </div>
-        ),
-        customPaging: (i) => (
-            <div
-                style={{
-                    width: '30px',
-                    color: 'blue',
-                    border: '1px blue solid',
-                }}
-            >
-                {i + 1}
-            </div>
-        ),
+    const [translateImg, setTranslateImg] = useState(0)
+    const translateImgHandler = () => {
+        setTranslateImg((state) => {
+            return state + 20
+        })
     }
-
     return (
-        <div >
-            {' '}
-            <Slider {...settings}>
-                {images.map((imageUrl, index) => (
-                    <div key={index}>
-                        <img src={imageUrl} alt={`Image ${index + 1}`} />
-                    </div>
-                ))}
-            </Slider>
+        <div className="flex w-[500%] gap-4 h-[350px] justify-center  items-center -translate-x-[20%]">
+            {images &&
+                images.map((ele, index) => {
+                    console.log(index)
+                    return (
+                        <div className="w-[100%] h-auto">
+                            <img className={`${index === 0 ? 'w-[60%]' : 'w-[90%]'}`} src={ele} alt="이미지 데이터" />
+                        </div>
+                    )
+                })}
         </div>
     )
 }
