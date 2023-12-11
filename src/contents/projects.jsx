@@ -149,6 +149,9 @@ const Projects = () => {
                     <div className="w-full">
                         <h2 className="flex flex-row items-center gap-[8px] text-[16px] text-slate-800 md:text-black md:text-[24px] font-semibold pb-[16px]">
                             Travel-Opener
+                            <a href="https://github.com/9oodam/Travel-Opener">
+                                <FaExternalLinkAlt />
+                            </a>
                         </h2>
 
                         <p className="leading-5 text-slate-950 text-[12px] md:text-[16px] md:leading-7">
