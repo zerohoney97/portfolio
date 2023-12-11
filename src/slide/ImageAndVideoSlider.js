@@ -1,8 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import Slider from 'react-slick'
-import './slide.css'
-import 'slick-carousel/slick/slick.css'
-import 'slick-carousel/slick/slick-theme.css'
+
 const ImageAndVideoSlider = ({ images, videos }) => {
     const [translateImg, setTranslateImg] = useState(0)
     const translateImgHandler = () => {
