@@ -68,7 +68,7 @@ const Projects = () => {
                             <a href="https://github.com/zerohoney97/blockExploreFront">
                                 <FaExternalLinkAlt />
                             </a>
-                            <a href="https://www.bouncexplorer.site/">
+                            <a href="https://zerohoney.com/">
                                 <GrDomain />
                             </a>
                         </h2>
