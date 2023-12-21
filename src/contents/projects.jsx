@@ -152,6 +152,9 @@ const Projects = () => {
                             <a href="https://github.com/9oodam/Travel-Opener">
                                 <FaExternalLinkAlt />
                             </a>
+                            <a href="https://www.hyunss.com/">
+                                <GrDomain />
+                            </a>
                         </h2>
 
                         <p className="leading-5 text-slate-950 text-[12px] md:text-[16px] md:leading-7">
